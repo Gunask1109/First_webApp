@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first WebApps</title>
+</head>
+<body>
+<h1>I am Gunasekar Sivasankar</h1>
+{{key1}}
+<a href="{% url 'result' %}">CLICK HERE FOR RESULT</a>
+<form action="{%url 'result' %}">
+    <br></br>
+    {% csrf_token %}
+    <textarea cols="40" rows="20"  name="article"></textarea>
+    <br></br>
+      <input type="submit" value="Submit">
+
+
+
+
+</form>
+</body>
+</html>

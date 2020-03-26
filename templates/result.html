@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+</head>
+<br>
+<h1>This passage has {{word_count}} words</h1>
+<a href="{% url 'home' %}">CLICK HERE TO HOME</a>
+<br></br>
+{{article}}
+<br></br>
+<br></br>
+<h1>Total Count</h1>
+<h1>words</h1>
+{% for word,num in d %}
+
+<h1>{{word}}::{{num}}</h1>
+{% endfor %}
+</body>
+</html>
